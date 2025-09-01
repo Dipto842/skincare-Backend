@@ -1,5 +1,6 @@
 
 import dotenv from 'dotenv';
+dotenv.config();
 import express from 'express';
 import cors from 'cors';
 import connectDB from './config/config.js';
@@ -9,7 +10,6 @@ import whattlist from './routes/whattlist.js'
 import All from './routes/All.js'
  const PORT = process.env.PORT || 5000;
 
-dotenv.config();
 
 const app= express();
 app.use(cors());
