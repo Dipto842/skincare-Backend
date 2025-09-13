@@ -8,6 +8,7 @@ import userRoutes from './routes/caridRoutes.js';
 import sidebarRoutes from './routes/SidebarData.js';
 import whattlist from './routes/whattlist.js'
 import All from './routes/All.js'
+import Home from './routes/Home.js'
  const PORT = process.env.PORT || 5000;
 
 
@@ -19,12 +20,13 @@ app.use(express.json());
 connectDB()
 
 // routes
+
  app.use("/carid",userRoutes )
  app.use("/sidebarData",sidebarRoutes)
 app.use('/whattlist', whattlist)
 app.use('/AllData', All)
 
-
+app.use('/',Home)
 app.listen(PORT, () => console.log(` Server running on port ${PORT}`));
 
 
