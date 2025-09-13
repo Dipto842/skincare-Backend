@@ -19,7 +19,7 @@ app.use(express.json());
 
 connectDB()
 
-// routes
+// route
 
  app.use("/carid",userRoutes )
  app.use("/sidebarData",sidebarRoutes)
