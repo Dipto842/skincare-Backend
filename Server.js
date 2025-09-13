@@ -12,6 +12,7 @@ import All from './routes/All.js'
 
 
 const app= express();
+app.listen(PORT, () => console.log(`Server running on ${PORT}`));
 app.use(cors());
 app.use(express.json());
 
