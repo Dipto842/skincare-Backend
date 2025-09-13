@@ -3,12 +3,12 @@ import dotenv from 'dotenv';
 dotenv.config();
 import express from 'express';
 import cors from 'cors';
-import connectDB from './config/config.js';
-import userRoutes from './routes/caridRoutes.js';
-import sidebarRoutes from './routes/SidebarData.js';
-import whattlist from './routes/whattlist.js'
-import All from './routes/All.js'
-import Home from './routes/Home.js'
+import connectDB from '../config/config.js';
+import userRoutes from '../routes/caridRoutes.js';
+import sidebarRoutes from '../routes/SidebarData.js';
+import whattlist from '../routes/whattlist.js'
+import All from '../routes/All.js'
+import Home from '../routes/Home.js'
  const PORT = process.env.PORT || 5000;
 
 
